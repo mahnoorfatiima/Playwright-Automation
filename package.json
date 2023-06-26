@@ -1,0 +1,24 @@
+{
+  "name": "e2e-tests",
+  "version": "1.0.0",
+  "description": "Playwright tests for VoiceFriend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --reporter=line,allure-playwright",
+    "test:record": "npx playwright codegen",
+    "allureReport": "allure serve",
+    "lint": "./node_modules/eslint/bin/eslint.js --quiet ./tests/ ./pages/ ./config/ ./lib/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2",
+    "allure-playwright": "^2.1.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.36.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
